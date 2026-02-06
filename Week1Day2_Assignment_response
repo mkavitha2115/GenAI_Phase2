@@ -1,0 +1,112 @@
+{
+    "session_id": "e3b41b59-cff5-4734-b831-fad23a393de5",
+    "outputs": [
+        {
+            "inputs": {
+                "input_value": "Generate UPI transaction flow test cases"
+            },
+            "outputs": [
+                {
+                    "results": {
+                        "message": {
+                            "text_key": "text",
+                            "data": {
+                                "timestamp": "2026-02-06 16:51:20 UTC",
+                                "sender": "Machine",
+                                "sender_name": "AI",
+                                "session_id": "e3b41b59-cff5-4734-b831-fad23a393de5",
+                                "context_id": "",
+                                "text": "TC_UPI_001\nTitle: Successful UPI transaction with valid credentials\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter recipient's UPI ID\n3. Enter transaction amount within daily limit\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction is successful, and confirmation is displayed\n\nTC_UPI_002\nTitle: UPI transaction with invalid recipient UPI ID\nPreconditions: User is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter invalid recipient UPI ID\n3. Enter transaction amount\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"Invalid recipient UPI ID\" error\n\nTC_UPI_003\nTitle: UPI transaction exceeding daily limit\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter recipient's UPI ID\n3. Enter transaction amount exceeding daily limit\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"Daily limit exceeded\" error\n\nTC_UPI_004\nTitle: UPI transaction with incorrect PIN\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter recipient's UPI ID\n3. Enter transaction amount\n4. Enter incorrect UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"Invalid UPI PIN\" error and PIN block count increments\n\nTC_UPI_005\nTitle: UPI transaction with blank UPI ID\nPreconditions: User is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Leave recipient's UPI ID blank\n3. Enter transaction amount\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"UPI ID is required\" validation error",
+                                "files": [],
+                                "error": false,
+                                "edit": false,
+                                "properties": {
+                                    "text_color": null,
+                                    "background_color": null,
+                                    "edited": false,
+                                    "source": {
+                                        "id": "GroqModel-AHtUn",
+                                        "display_name": "Groq",
+                                        "source": "meta-llama/llama-4-maverick-17b-128e-instruct"
+                                    },
+                                    "icon": null,
+                                    "allow_markdown": false,
+                                    "positive_feedback": null,
+                                    "state": "complete",
+                                    "targets": []
+                                },
+                                "category": "message",
+                                "content_blocks": [],
+                                "id": "468cbac2-e87d-41fc-9100-0fd23819dd33",
+                                "flow_id": "e3b41b59-cff5-4734-b831-fad23a393de5",
+                                "duration": null
+                            },
+                            "default_value": "",
+                            "text": "TC_UPI_001\nTitle: Successful UPI transaction with valid credentials\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter recipient's UPI ID\n3. Enter transaction amount within daily limit\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction is successful, and confirmation is displayed\n\nTC_UPI_002\nTitle: UPI transaction with invalid recipient UPI ID\nPreconditions: User is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter invalid recipient UPI ID\n3. Enter transaction amount\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"Invalid recipient UPI ID\" error\n\nTC_UPI_003\nTitle: UPI transaction exceeding daily limit\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter recipient's UPI ID\n3. Enter transaction amount exceeding daily limit\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"Daily limit exceeded\" error\n\nTC_UPI_004\nTitle: UPI transaction with incorrect PIN\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter recipient's UPI ID\n3. Enter transaction amount\n4. Enter incorrect UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"Invalid UPI PIN\" error and PIN block count increments\n\nTC_UPI_005\nTitle: UPI transaction with blank UPI ID\nPreconditions: User is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Leave recipient's UPI ID blank\n3. Enter transaction amount\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"UPI ID is required\" validation error",
+                            "sender": "Machine",
+                            "sender_name": "AI",
+                            "files": [],
+                            "session_id": "e3b41b59-cff5-4734-b831-fad23a393de5",
+                            "context_id": "",
+                            "timestamp": "2026-02-06T16:51:20+00:00",
+                            "flow_id": "e3b41b59-cff5-4734-b831-fad23a393de5",
+                            "error": false,
+                            "edit": false,
+                            "properties": {
+                                "text_color": null,
+                                "background_color": null,
+                                "edited": false,
+                                "source": {
+                                    "id": "GroqModel-AHtUn",
+                                    "display_name": "Groq",
+                                    "source": "meta-llama/llama-4-maverick-17b-128e-instruct"
+                                },
+                                "icon": null,
+                                "allow_markdown": false,
+                                "positive_feedback": null,
+                                "state": "complete",
+                                "targets": []
+                            },
+                            "category": "message",
+                            "content_blocks": [],
+                            "duration": null
+                        }
+                    },
+                    "artifacts": {
+                        "message": "TC_UPI_001\n\nTitle: Successful UPI transaction with valid credentials\n\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\n\nSteps:\n\n1. Navigate to UPI payment section\n\n2. Enter recipient's UPI ID\n\n3. Enter transaction amount within daily limit\n\n4. Enter valid UPI PIN\n\n5. Confirm transaction\n\nExpected Result: Transaction is successful, and confirmation is displayed\n\nTC_UPI_002\n\nTitle: UPI transaction with invalid recipient UPI ID\n\nPreconditions: User is logged into the mobile banking app\n\nSteps:\n\n1. Navigate to UPI payment section\n\n2. Enter invalid recipient UPI ID\n\n3. Enter transaction amount\n\n4. Enter valid UPI PIN\n\n5. Confirm transaction\n\nExpected Result: Transaction fails with \"Invalid recipient UPI ID\" error\n\nTC_UPI_003\n\nTitle: UPI transaction exceeding daily limit\n\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\n\nSteps:\n\n1. Navigate to UPI payment section\n\n2. Enter recipient's UPI ID\n\n3. Enter transaction amount exceeding daily limit\n\n4. Enter valid UPI PIN\n\n5. Confirm transaction\n\nExpected Result: Transaction fails with \"Daily limit exceeded\" error\n\nTC_UPI_004\n\nTitle: UPI transaction with incorrect PIN\n\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\n\nSteps:\n\n1. Navigate to UPI payment section\n\n2. Enter recipient's UPI ID\n\n3. Enter transaction amount\n\n4. Enter incorrect UPI PIN\n\n5. Confirm transaction\n\nExpected Result: Transaction fails with \"Invalid UPI PIN\" error and PIN block count increments\n\nTC_UPI_005\n\nTitle: UPI transaction with blank UPI ID\n\nPreconditions: User is logged into the mobile banking app\n\nSteps:\n\n1. Navigate to UPI payment section\n\n2. Leave recipient's UPI ID blank\n\n3. Enter transaction amount\n\n4. Enter valid UPI PIN\n\n5. Confirm transaction\n\nExpected Result: Transaction fails with \"UPI ID is required\" validation error",
+                        "sender": "Machine",
+                        "sender_name": "AI",
+                        "files": [],
+                        "type": "object"
+                    },
+                    "outputs": {
+                        "message": {
+                            "message": "TC_UPI_001\nTitle: Successful UPI transaction with valid credentials\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter recipient's UPI ID\n3. Enter transaction amount within daily limit\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction is successful, and confirmation is displayed\n\nTC_UPI_002\nTitle: UPI transaction with invalid recipient UPI ID\nPreconditions: User is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter invalid recipient UPI ID\n3. Enter transaction amount\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"Invalid recipient UPI ID\" error\n\nTC_UPI_003\nTitle: UPI transaction exceeding daily limit\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter recipient's UPI ID\n3. Enter transaction amount exceeding daily limit\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"Daily limit exceeded\" error\n\nTC_UPI_004\nTitle: UPI transaction with incorrect PIN\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Enter recipient's UPI ID\n3. Enter transaction amount\n4. Enter incorrect UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"Invalid UPI PIN\" error and PIN block count increments\n\nTC_UPI_005\nTitle: UPI transaction with blank UPI ID\nPreconditions: User is logged into the mobile banking app\nSteps:\n1. Navigate to UPI payment section\n2. Leave recipient's UPI ID blank\n3. Enter transaction amount\n4. Enter valid UPI PIN\n5. Confirm transaction\nExpected Result: Transaction fails with \"UPI ID is required\" validation error",
+                            "type": "text"
+                        }
+                    },
+                    "logs": {
+                        "message": []
+                    },
+                    "messages": [
+                        {
+                            "message": "TC_UPI_001\n\nTitle: Successful UPI transaction with valid credentials\n\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\n\nSteps:\n\n1. Navigate to UPI payment section\n\n2. Enter recipient's UPI ID\n\n3. Enter transaction amount within daily limit\n\n4. Enter valid UPI PIN\n\n5. Confirm transaction\n\nExpected Result: Transaction is successful, and confirmation is displayed\n\nTC_UPI_002\n\nTitle: UPI transaction with invalid recipient UPI ID\n\nPreconditions: User is logged into the mobile banking app\n\nSteps:\n\n1. Navigate to UPI payment section\n\n2. Enter invalid recipient UPI ID\n\n3. Enter transaction amount\n\n4. Enter valid UPI PIN\n\n5. Confirm transaction\n\nExpected Result: Transaction fails with \"Invalid recipient UPI ID\" error\n\nTC_UPI_003\n\nTitle: UPI transaction exceeding daily limit\n\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\n\nSteps:\n\n1. Navigate to UPI payment section\n\n2. Enter recipient's UPI ID\n\n3. Enter transaction amount exceeding daily limit\n\n4. Enter valid UPI PIN\n\n5. Confirm transaction\n\nExpected Result: Transaction fails with \"Daily limit exceeded\" error\n\nTC_UPI_004\n\nTitle: UPI transaction with incorrect PIN\n\nPreconditions: User has a valid UPI ID and is logged into the mobile banking app\n\nSteps:\n\n1. Navigate to UPI payment section\n\n2. Enter recipient's UPI ID\n\n3. Enter transaction amount\n\n4. Enter incorrect UPI PIN\n\n5. Confirm transaction\n\nExpected Result: Transaction fails with \"Invalid UPI PIN\" error and PIN block count increments\n\nTC_UPI_005\n\nTitle: UPI transaction with blank UPI ID\n\nPreconditions: User is logged into the mobile banking app\n\nSteps:\n\n1. Navigate to UPI payment section\n\n2. Leave recipient's UPI ID blank\n\n3. Enter transaction amount\n\n4. Enter valid UPI PIN\n\n5. Confirm transaction\n\nExpected Result: Transaction fails with \"UPI ID is required\" validation error",
+                            "sender": "Machine",
+                            "sender_name": "AI",
+                            "session_id": "e3b41b59-cff5-4734-b831-fad23a393de5",
+                            "stream_url": null,
+                            "component_id": "ChatOutput-sgJkA",
+                            "files": [],
+                            "type": "text"
+                        }
+                    ],
+                    "timedelta": null,
+                    "duration": null,
+                    "component_display_name": "Chat Output",
+                    "component_id": "ChatOutput-sgJkA",
+                    "used_frozen_result": false
+                }
+            ]
+        }
+    ]
+}
