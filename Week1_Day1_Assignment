@@ -1,0 +1,119 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wards Dashboard View Request – User Story Review</title>
+    <style>
+        body {font-family: Arial, sans-serif; margin: 20px; line-height: 1.5;}
+        h1 {color: #2E5C6E;}
+        table {border-collapse: collapse; width: 100%; max-width: 800px;}
+        th, td {border: 1px solid #ccc; padding: 8px 12px; text-align: left;}
+        th {background-color: #f2f2f2;}
+        .score {font-weight: bold; color: #2E5C6E;}
+        .overall {font-size: 1.2em; margin-top: 20px;}
+        .improvement {margin-top: 20px;}
+        .improvement ul {margin-left: 20px;}
+    </style>
+</head>
+<body>
+
+<h1>Wards Dashboard View Request – User Story Review</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Description / Assessment</th>
+            <th>Score (out of 20)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Clarity</td>
+            <td>
+                The story text is ambiguous (“I want to wards dashboard view request”). The actor, goal, and benefit are not clearly expressed, making it hard for the team to visualise the intended functionality.
+            </td>
+            <td class="score">8</td>
+        </tr>
+        <tr>
+            <td>Completeness</td>
+            <td>
+                Acceptance criteria are limited to “relevant data and visualizations should be displayed correctly without delay.” No pre‑conditions, data sources, performance targets, security or compliance constraints are defined.
+            </td>
+            <td class="score">9</td>
+        </tr>
+        <tr>
+            <td>Business Value Alignment</td>
+            <td>
+                A ward‑level dashboard can improve operational efficiency (bed management, staffing) and indirectly support patient safety, but the story does not articulate the specific value or KPI it will impact.
+            </td>
+            <td class="score">14</td>
+        </tr>
+        <tr>
+            <td>Testability</td>
+            <td>
+                Because the acceptance criteria lack measurable thresholds (e.g., load time, data accuracy), QA cannot derive concrete test cases without additional clarification.
+            </td>
+            <td class="score">10</td>
+        </tr>
+        <tr>
+            <td>Technical Feasibility</td>
+            <td>
+                The concept is feasible, but the story does not mention integration points (EHR, HL7 feeds), data refresh frequency, or any constraints imposed by HIPAA/PoPIA, leaving developers with unknown technical boundaries.
+            </td>
+            <td class="score">13</td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="overall"><strong>Overall Score: 54 / 100</strong></p>
+
+<div class="improvement">
+    <h2>Improvement Recommendations</h2>
+
+    <h3>1. Clarity</h3>
+    <ul>
+        <li>Rewrite the story using the standard “As &lt;role&gt;, I want &lt;goal&gt; so that &lt;benefit&gt;” format.</li>
+        <li>Specify the primary actor (e.g., “Ward Manager” or “Clinical Operations Analyst”).</li>
+        <li>State the exact purpose of the dashboard (e.g., “monitor real‑time bed occupancy and staffing ratios”).</li>
+    </ul>
+
+    <h3>2. Completeness</h3>
+    <ul>
+        <li>List pre‑conditions: user must be authenticated, have “Ward Dashboard” role, and the system must have data feeds from the Bed Management System.</li>
+        <li>Define the data elements to be shown (e.g., occupied beds, pending discharges, average LOS, staffing levels).</li>
+        <li>Include performance targets (e.g., page loads ≤ 2 seconds, data refreshed every 5 minutes).</li>
+        <li>State security/compliance requirements (HIPAA‑encrypted transmission, audit logging).</li>
+    </ul>
+
+    <h3>3. Business Value Alignment</h3>
+    <ul>
+        <li>Connect the dashboard to measurable outcomes: reduction in average LOS by X %, improvement in bed turnover time, or compliance with staffing ratios.</li>
+        <li>Reference relevant hospital KPIs or regulatory mandates that the dashboard supports.</li>
+    </ul>
+
+    <h3>4. Testability</h3>
+    <ul>
+        <li>Convert vague acceptance criteria into concrete, testable statements, e.g.:
+            <ul>
+                <li>“When a user with the ‘Ward Manager’ role opens the dashboard, the UI renders within 2 seconds.”</li>
+                <li>“All displayed metrics must match the source system values to within ±1 %.”</li>
+                <li>“If the user lacks the required role, an ‘Access Denied’ message is shown.”</li>
+            </ul>
+        </li>
+        <li>Provide edge‑case scenarios (no data, partial data, data‑feed outage). </li>
+    </ul>
+
+    <h3>5. Technical Feasibility</h3>
+    <ul>
+        <li>Identify integration points (e.g., HL7 ADT feeds, Bed Management API, staffing roster system).</li>
+        <li>Specify the technology stack or visualization library (e.g., React + D3, Power BI embedded).</li>
+        <li>Outline any non‑functional constraints: data encryption at rest/in‑transit, audit‑trail requirements, scalability for up to 200 concurrent users.</li>
+        <li>Confirm that the solution complies with HIPAA and PoPIA (e.g., role‑based access control, data residency). </li>
+    </ul>
+</div>
+
+</body>
+</html>
+```
